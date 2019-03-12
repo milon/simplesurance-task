@@ -12,6 +12,6 @@ class DocumentTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Document::class, 50)->create();
+        factory(Document::class, 500)->create();
     }
 }

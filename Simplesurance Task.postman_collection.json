@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "5528aa3d-cfb9-432c-bc2e-30be6271e19d",
+		"name": "Simplesurance Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a new document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "body",
+							"value": "In addition to content, each item can specify a filename key, which will be used as the name of the temporary Markdown file. If omitted, the filename will default to the name of the collection followed by an index, so post_1.md, post_2.md, etc. The resulting path of the output file will be processed according to the normal rules for collections.",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "task.test/api/document/1",
+					"host": [
+						"task",
+						"test"
+					],
+					"path": [
+						"api",
+						"document",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search a document by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "task.test/api/document/1",
+					"host": [
+						"task",
+						"test"
+					],
+					"path": [
+						"api",
+						"document",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a document by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "task.test/api/document/1",
+					"host": [
+						"task",
+						"test"
+					],
+					"path": [
+						"api",
+						"document",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search a document by term",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "task.test/api/search?q=",
+					"host": [
+						"task",
+						"test"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
