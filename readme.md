@@ -39,7 +39,7 @@ This application comes with 4 endpoints-
 * `DELETE /api/document/{id}`
 * `GET /api/search?q={query}`
 
-The last one is used for searching. the `query` parameter can be a single value, or comma separated multiple values.
+The last one is used for searching. the `query` parameter can be a single value, or comma separated multiple values. The response is paginated. By default it will return 10 documents, but you can change it by passing `limit` as query parameter. To go to the second page of the same query, just pass `page={page_number}` as query parameter.
 
 There is also a Postman [collection](Simplesurance%20Task.postman_collection.json) added to the project. You can just import it to Postman API client to test.
 
