@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/document/{id}', 'DocumentController@show');
 Route::post('/document/{id}', 'DocumentController@store');
 Route::delete('/document/{id}', 'DocumentController@destroy');
+Route::get('/search', 'SearchController@search');
